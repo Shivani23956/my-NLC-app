@@ -25,6 +25,1288 @@ render.experimental.xml
 # Keystore files
 *.jks
 *.keystore
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fonebox NLC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+ thead {
+      background-color: #f0f0f0;
+
+    input {
+      width: 95%;
+      padding: 5px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+.reset-btn {
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .reset-btn:hover {
+      background-color: #e57373;
+    }
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      table {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+    }
+
+
+    /* Highlight matched text */
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<div class="company-header">
+  <div class="company-brand">
+    <!-- Insert your logo here -->
+    <<img src="https://yourwebsite.com/images/logo.png" alt="Company Logo" class="company-logo">
+    <div class="company-name">FONEBOOK</div>
+  </div>
+  
+</div>
+
+ <!-- Top header with reset button aligned to the right -->
+  <div class="header">
+    <h2>Gujarat NLC</h2>
+    <button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
+  </div>
+
+
+
+<table id="myTable">
+
+   
+  <thead>
+    <tr>
+      <th><input type="text" placeholder="Search Brand" onkeyup="filterTable(0)"><br>Brand</th>
+      <th><input type="text" placeholder="Search Name" onkeyup="filterTable(1)"><br>Name</th>
+      <th><input type="text" placeholder="Search MOP" onkeyup="filterTable(2)"><br>MOP</th>
+<th><input type="text" placeholder="Search NLC" onkeyup="filterTable(3)"><br>NLC</th>
+    </tr>
+  </thead>
+  <tbody>
+    	
+<tr>	<td>Redmi</td>	<td>10 (4GB+64GB)</td>	<td>9299</td>	<td>8555.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10 (6GB+128GB)</td>	<td>11299</td>	<td>10395.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 4G (4GB+64GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 4G (8GB+128GB)</td>	<td>13999</td>	<td>13019.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10 POWER (8GB+128GB)</td>	<td>12499</td>	<td>11499.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10 PRIME (4GB+64GB)</td>	<td>10999</td>	<td>10119.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10 PRIME (6GB+128GB)</td>	<td>12999</td>	<td>11959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10 PRIME 2022 (4GB+64GB)</td>	<td>10999</td>	<td>10119.08</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10 PRO (12GB+256GB)</td>	<td>71999</td>	<td>67679</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10 PRO (8GB+128GB)</td>	<td>66999</td>	<td>62979</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 PRO 5G (6GB+128GB)</td>	<td>18999</td>	<td>17669.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 PRO 5G (8GB+128GB)</td>	<td>19999</td>	<td>18599.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 PRO PLUS 5G (6GB+128GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 PRO Plus 5G (8GB+128GB)</td>	<td>25999</td>	<td>24179.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>10 PRO Plus 5G (8GB+256GB)</td>	<td>27999</td>	<td>26039.07</td>	</tr>
+<tr>	<td>OPPO</td>	<td>10.36 INCH AIR WI-FI (4GB+128GB)</td>	<td>19999</td>	<td>18135</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10A (3GB+32GB)</td>	<td>7499</td>	<td>6899.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10A (4GB+64GB)</td>	<td>8299</td>	<td>7635.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10A SPORT (6GB+128GB)</td>	<td>10499</td>	<td>9659.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10I (8GB+128GB)</td>	<td>23999</td>	<td>22079.08</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10R5G 150W (12GB+256GB)</td>	<td>39999</td>	<td>37599</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10R5G 80W (12GB+256GB)</td>	<td>38999</td>	<td>36659</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10R5G 80W (8GB+128GB)</td>	<td>34999</td>	<td>32899</td>	</tr>
+<tr>	<td>Redmi</td>	<td>10T (6GB+128GB)</td>	<td>26999</td>	<td>24839.08</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10T 5G (12GB+256GB)</td>	<td>54999</td>	<td>51699</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10T 5G (16GB+256GB)</td>	<td>55999</td>	<td>52639</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>10T 5G (8GB+128GB)</td>	<td>49999</td>	<td>46999</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>11 5G (16GB+256GB) Marble Edition</td>	<td>64999</td>	<td>61099</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 5G (8GB+128GB)</td>	<td>15499</td>	<td>14414.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 5G (8GB+256GB)</td>	<td>15499</td>	<td>14414.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 LITE 5G (6GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 LITE 5G (8GB+128GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 LITE NE (6GB+128GB)</td>	<td>26999</td>	<td>24839.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 LITE NE 5G (8GB+128GB)</td>	<td>28999</td>	<td>26679.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 PRIME (4GB+64GB)</td>	<td>9499</td>	<td>8739.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 PRIME (6GB+128GB)</td>	<td>10499</td>	<td>9659.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 PRIME (6GB+64GB)</td>	<td>14499</td>	<td>13339.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 PRIME 5G (4GB+64GB)</td>	<td>12999</td>	<td>12117.67</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11 PRIME 5G (6GB+128GB)</td>	<td>14999</td>	<td>13799.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 PRO 5G (12GB+256GB)</td>	<td>25999</td>	<td>24179.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 PRO 5G (8GB+128GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 PRO 5G (8GB+256GB)</td>	<td>22999</td>	<td>21389.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 PRO PLUS 5G (12GB+256GB)</td>	<td>23999</td>	<td>22319.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11 PRO PLUS 5G (8GB+256GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I (6GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I (8GB+128GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I 5G  (8GB+128GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I 5G (6GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I HYPERCHARGE (6GB+128GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11I HYPERCHARGE (8GB+128GB)</td>	<td>24999</td>	<td>22999.08</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>11R 5G (16GB+256GB)</td>	<td>38999</td>	<td>36659</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>11R 5G (8GB+128GB)</td>	<td>29999</td>	<td>28199</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11T PRO (12GB+256GB)</td>	<td>37999</td>	<td>34959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11T PRO (8GB+128GB)</td>	<td>33999</td>	<td>31279.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11T PRO (8GB+256GB)</td>	<td>35999</td>	<td>33119.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X (6GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X (8GB+128GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X 5G (6GB+128GB)</td>	<td>27999</td>	<td>25759.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>11X 5G (6GB+128GB)_</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>11X 5G (8GB+128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X PRO (8GB+128GB)</td>	<td>30999</td>	<td>28519.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X PRO (8GB+256GB)</td>	<td>32999</td>	<td>30359.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X PRO 5G  (8GB+128GB)</td>	<td>36999</td>	<td>34039.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>11X PRO 5G (8GB+128GB)</td>	<td>36999</td>	<td>34039.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 4G (4GB+128GB)</td>	<td>9499</td>	<td>9016.45</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 4G (6GB+128GB)</td>	<td>9999</td>	<td>9199.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 5G (4GB+128GB)</td>	<td>11999</td>	<td>11389.45</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 5G (6GB+128GB)</td>	<td>12499</td>	<td>11499.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 5G (8GB+256GB)</td>	<td>14499</td>	<td>13339.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 PRO (12GB+256GB)</td>	<td>41999</td>	<td>38639.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12 PRO (8GB+256GB)</td>	<td>39999</td>	<td>36799.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO 5G (12GB+256GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO 5G (8GB+128GB)</td>	<td>22999</td>	<td>21389.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO 5G (8GB+256GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO PLUS 5G (12GB+256GB)</td>	<td>31999</td>	<td>29759.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO PLUS 5G (8GB+128GB)</td>	<td>27999</td>	<td>26039.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12 PRO PLUS 5G (8GB+256GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12C (4GB+128GB)</td>	<td>7599</td>	<td>6991.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12C (4GB+64GB)</td>	<td>7499</td>	<td>7118.05</td>	</tr>
+<tr>	<td>Redmi</td>	<td>12C (6GB+128GB)</td>	<td>8499</td>	<td>7819.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>12X 5G (4GB+128GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12X 5G (6GB+128GB)</td>	<td>13499</td>	<td>12554.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>12X 5G (8GB+128GB)</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>Apple</td>	<td>13 128GB</td>	<td>49900</td>	<td>43627</td>	</tr>
+<tr>	<td>Apple</td>	<td>13 256GB</td>	<td>59900</td>	<td>55707</td>	</tr>
+<tr>	<td>Apple</td>	<td>13 512GB</td>	<td>79900</td>	<td>74307</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13 5G (6GB+128GB)</td>	<td>12499</td>	<td>11499.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13 5G (8GB+128GB)</td>	<td>13999</td>	<td>12879.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO 5G (12GB+512GB)</td>	<td>28999</td>	<td>26969.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO 5G (8GB+128GB)</td>	<td>23999</td>	<td>22319.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO 5G (8GB+256GB)</td>	<td>25999</td>	<td>24179.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO PLUS 5G (12GB+256GB)</td>	<td>32999</td>	<td>30689.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO PLUS 5G (12GB+512GB)</td>	<td>34999</td>	<td>32549.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>13 PRO PLUS 5G (8GB+256GB)</td>	<td>30999</td>	<td>28829.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 4G (4GB+128GB)</td>	<td>8999</td>	<td>8459.06</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 4G (6GB+128GB)</td>	<td>9999</td>	<td>9399.06</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 4G (8GB+256GB)</td>	<td>10999</td>	<td>10119.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 5G (4GB+128GB)</td>	<td>9999</td>	<td>9399.06</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 5G (6GB+128GB)</td>	<td>11299</td>	<td>10395.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>13C 5G (8GB+256GB)</td>	<td>13299</td>	<td>12235.08</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 128GB</td>	<td>59900</td>	<td>51507</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 256GB</td>	<td>69900</td>	<td>60807</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 512GB</td>	<td>89900</td>	<td>83607</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Plus 128GB</td>	<td>69900</td>	<td>65007</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Plus 256GB</td>	<td>79900</td>	<td>74307</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Plus 512GB</td>	<td>99900</td>	<td>92907</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro 128GB</td>	<td>129900</td>	<td>120807</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro 1TB</td>	<td>179900</td>	<td>167307</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro 256GB</td>	<td>139900</td>	<td>130107</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro 512GB</td>	<td>159900</td>	<td>148707</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro Max 128GB</td>	<td>139900</td>	<td>130107</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro Max 1TB</td>	<td>189900</td>	<td>176607</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro Max 256GB</td>	<td>149900</td>	<td>139407</td>	</tr>
+<tr>	<td>Apple</td>	<td>14 Pro Max 512GB</td>	<td>169900</td>	<td>158007</td>	</tr>
+<tr>	<td>Redmi</td>	<td>14C 5G (4GB+128GB)</td>	<td>10999</td>	<td>10119.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>14C 5G (4GB+64GB)</td>	<td>9999</td>	<td>9199.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>14C 5G (6GB+128GB)</td>	<td>11999</td>	<td>11039.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>14X 5G (6GB+128GB)</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>14X 5G (8GB+128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 128GB</td>	<td>69900</td>	<td>60807</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 256GB</td>	<td>79900</td>	<td>70107</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 512GB</td>	<td>99900</td>	<td>92907</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Plus 128GB</td>	<td>79900</td>	<td>70107</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Plus 256GB</td>	<td>89900</td>	<td>79407</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Plus 512GB</td>	<td>109900</td>	<td>102207</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro 128GB</td>	<td>129800</td>	<td>120714</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro 1TB</td>	<td>179400</td>	<td>166842</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro 256GB</td>	<td>139800</td>	<td>130014</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro 512GB</td>	<td>159700</td>	<td>148521</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro Max 1TB</td>	<td>193500</td>	<td>179955</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro Max 256GB</td>	<td>154000</td>	<td>143220</td>	</tr>
+<tr>	<td>Apple</td>	<td>15 Pro Max 512GB</td>	<td>173900</td>	<td>161727</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 128GB</td>	<td>79900</td>	<td>70107</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 256GB</td>	<td>89900</td>	<td>79407</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 512GB</td>	<td>109900</td>	<td>98007</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Plus 128GB</td>	<td>89900</td>	<td>79407</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Plus 256GB</td>	<td>99900</td>	<td>88707</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Plus 512GB</td>	<td>119900</td>	<td>107307</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro 128GB</td>	<td>119900</td>	<td>106107</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro 1TB</td>	<td>169900</td>	<td>152607</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro 256GB</td>	<td>129900</td>	<td>115407</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro 512GB</td>	<td>149900</td>	<td>134007</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro Max 1TB</td>	<td>184900</td>	<td>166557</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro Max 256GB</td>	<td>144900</td>	<td>129357</td>	</tr>
+<tr>	<td>Apple</td>	<td>16 Pro Max 512GB</td>	<td>164900</td>	<td>147957</td>	</tr>
+<tr>	<td>Apple</td>	<td>16E 128GB</td>	<td>59900</td>	<td>55707</td>	</tr>
+<tr>	<td>Apple</td>	<td>16E 256GB</td>	<td>69900</td>	<td>65007</td>	</tr>
+<tr>	<td>Apple</td>	<td>16E 512GB</td>	<td>89900</td>	<td>83607</td>	</tr>
+<tr>	<td>Realme</td>	<td>30 5G (6GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50 5G (4GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50 5G (4GB+64GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50 5G (6GB+128GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50 PRO 5G (6GB+128GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50 PRO 5G (8GB+128GB)</td>	<td>23999</td>	<td>22319.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50A (4GB+128GB)</td>	<td>12499</td>	<td>11624.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50A (4GB+64GB)</td>	<td>11499</td>	<td>10694.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50A PRIME (4GB+128GB)</td>	<td>12499</td>	<td>11624.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50A PRIME (4GB+64GB)</td>	<td>11499</td>	<td>10694.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50I (2GB+32GB)</td>	<td>7499</td>	<td>6974.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>50I (4GB+64GB)</td>	<td>8999</td>	<td>8369.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>60 5G (8GB+128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>7 PRO (6GB+128GB)</td>	<td>19999</td>	<td>18999.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>7 PRO (8GB+128GB)</td>	<td>21999</td>	<td>20899.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 (4GB+128GB)</td>	<td>15999</td>	<td>15199.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 (6GB+128GB)</td>	<td>16999</td>	<td>16149.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 (8GB+128GB)</td>	<td>17999</td>	<td>17099.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 5G (4GB+128GB)</td>	<td>16499</td>	<td>15344.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 5G (4GB+64GB)</td>	<td>15499</td>	<td>14414.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 5G (8GB+128GB)</td>	<td>18499</td>	<td>17204.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 PRO (6GB+128GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8 PRO (8GB+128GB)</td>	<td>19999</td>	<td>18599.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8I 5G (4GB/64GB)</td>	<td>13999</td>	<td>13019.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8I 5G (6GB/128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8S 5G (6GB/128GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>8S 5G (8GB/128GB)</td>	<td>19999</td>	<td>18599.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9 (4GB+64GB)</td>	<td>9499</td>	<td>8739.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 (6GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 (8GB+128GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 5G (4GB+64GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 5G (6GB+128GB)</td>	<td>17499</td>	<td>16274.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 5G SE (6GB+128GB)</td>	<td>19999</td>	<td>18599.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 5G SE (8GB+128GB)</td>	<td>22999</td>	<td>21389.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9 ACTIVE (4GB+64GB)</td>	<td>9499</td>	<td>8739.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9 ACTIVE (6GB+128GB)</td>	<td>11499</td>	<td>10579.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9 POWER (4GB+64GB)</td>	<td>11499</td>	<td>10579.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 PRO 5G (6GB+128GB)</td>	<td>18999</td>	<td>17669.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 PRO 5G (8GB+128GB)</td>	<td>20999</td>	<td>19529.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 PRO PLUS 5G (6GB+128GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 PRO PLUS 5G (8GB+128GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9 PRO PLUS 5G (8GB+256GB)</td>	<td>28999</td>	<td>26969.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9A (2GB+32GB)</td>	<td>7499</td>	<td>7236.54</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9A (3GB+32GB)</td>	<td>8299</td>	<td>7635.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9A SPORT (2GB+32GB)</td>	<td>7499</td>	<td>7236.54</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9A SPORT (3GB+32GB)</td>	<td>8299</td>	<td>7635.08</td>	</tr>
+<tr>	<td>Realme</td>	<td>9I (4GB+128GB)</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9I (4GB+64GB)</td>	<td>13499</td>	<td>12554.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9I (6GB+128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9I 5G (4GB+64GB)</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>9I 5G (6GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Redmi</td>	<td>9I SPORT (4G+64GB)</td>	<td>8999</td>	<td>8279.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A03 (3GB+32GB)</td>	<td>9999</td>	<td>8970.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A03 (4GB+64GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A03 CORE (2GB+32GB)</td>	<td>6999</td>	<td>6435.52</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A03S (3GB+32GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A03S (4GB+64GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04 (3GB+32GB)</td>	<td>10999</td>	<td>9868.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04 (4GB+128GB)</td>	<td>12999</td>	<td>11661.8</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04 (4GB+64GB)</td>	<td>11999</td>	<td>10765.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04E (3GB+32GB)</td>	<td>9299</td>	<td>8342.51</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04E (3GB+64GB)</td>	<td>9999</td>	<td>8970.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04E (4GB+128GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04S (4GB+128GB)</td>	<td>13499</td>	<td>12110.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A04S (4GB+64GB)</td>	<td>12499</td>	<td>11213.56</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A05 (4GB+64GB)</td>	<td>7999</td>	<td>6882.56</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A05 (6GB+128GB)</td>	<td>8999</td>	<td>7802.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A05S (4GB+128GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A05S (6GB+128GB)</td>	<td>12999</td>	<td>11661.8</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A06 (4GB+128GB)</td>	<td>11499</td>	<td>9681.71</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A06 (4GB+64GB)</td>	<td>9999</td>	<td>8340.82</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A06 5G (4GB+128GB)</td>	<td>11499</td>	<td>10316.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A06 5G (4GB+64GB)</td>	<td>10499</td>	<td>9419.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A06 5G (6GB+128GB)</td>	<td>12999</td>	<td>11662.56</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A1 (2GB+32GB)</td>	<td>6499</td>	<td>6271.54</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A1 PLUS (2GB+32GB)</td>	<td>6799</td>	<td>6255.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A1 PLUS (3GB+32GB)</td>	<td>7799</td>	<td>7175.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A12 (4GB+128GB)</td>	<td>13999</td>	<td>12559.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A13 (4GB+128GB)</td>	<td>15499</td>	<td>13905.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A13 (4GB+64GB)</td>	<td>14499</td>	<td>13008.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A13 (6GB+128GB)</td>	<td>16999</td>	<td>15250.8</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 4G (4GB+128GB)</td>	<td>14999</td>	<td>13456.3</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 4G (4GB+64GB)</td>	<td>13999</td>	<td>12559.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 5G (4GB+128GB)</td>	<td>14499</td>	<td>13008.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 5G (4GB+64GB)</td>	<td>13499</td>	<td>12110.04</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 5G (6GB+128GB)</td>	<td>15999</td>	<td>14353.55</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A14 5G (8GB+128GB)</td>	<td>17999</td>	<td>16147.28</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A15 (2GB+32GB)</td>	<td>9499</td>	<td>8936</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A15 (3GB+32GB)</td>	<td>10990</td>	<td>10338</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A15 5G (6GB+128GB)</td>	<td>15499</td>	<td>13905.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A15 5G (8GB+128GB)</td>	<td>16999</td>	<td>15250.8</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A15 5G (8GB+256GB)</td>	<td>19999</td>	<td>17942.55</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A15S (4GB+128GB)</td>	<td>10990</td>	<td>10433</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A15S (4GB+64GB)</td>	<td>9990</td>	<td>9484</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A16 (4GB+64GB)</td>	<td>12990</td>	<td>12088</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A16 5G (6GB+128GB)</td>	<td>15999</td>	<td>13895.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A16 5G (8GB+128GB)</td>	<td>17499</td>	<td>15241.52</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A16 5G (8GB+256GB)</td>	<td>20499</td>	<td>17932.5</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A16 E (3GB+32GB)</td>	<td>8999</td>	<td>8526</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A16 E (4GB+64GB)</td>	<td>9999</td>	<td>9474</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A16K (3GB+32GB)</td>	<td>8999</td>	<td>8526</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A16K (4GB+64GB)</td>	<td>9999</td>	<td>9474</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A17 (4GB+64GB)</td>	<td>9999</td>	<td>9474</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A17K (3GB+ 64GB)</td>	<td>8499</td>	<td>8046</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A18 4G (4GB+128GB)</td>	<td>9499</td>	<td>8998</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A18 4G (4GB+64GB)</td>	<td>8999</td>	<td>8526</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A2 (2GB+32GB)</td>	<td>5899</td>	<td>5599.33</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A2 (2GB+64GB)</td>	<td>5999</td>	<td>5519.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A2 (4GB+64GB)</td>	<td>6499</td>	<td>5979.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A2 PLUS (4GB+128GB)</td>	<td>7599</td>	<td>6991.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A2 PLUS (4GB+64GB)</td>	<td>7499</td>	<td>6899.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A21S (4GB+64GB)</td>	<td>14999</td>	<td>13703.11</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A22 (6GB+128GB)</td>	<td>18499</td>	<td>16596.29</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A22 5G (6GB+128GB)</td>	<td>17999</td>	<td>16148.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A22 5G (8GB+128GB)</td>	<td>19999</td>	<td>17941.78</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A23 (6GB+128GB)</td>	<td>18499</td>	<td>16596.29</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A23 (8GB+128GB)</td>	<td>19999</td>	<td>17942.55</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A23 5G (6GB+128GB)</td>	<td>21999</td>	<td>19736.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A23 5G (8GB+128GB)</td>	<td>23999</td>	<td>21530.78</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A25 5G (8GB+128GB)</td>	<td>26999</td>	<td>24222.53</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A25 5G (8GB+256GB)</td>	<td>29999</td>	<td>26913.51</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A3 (3GB+64GB)</td>	<td>6999</td>	<td>6439.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A3 (4GB+128GB)</td>	<td>7999</td>	<td>7359.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A3 (6GB+128GB)</td>	<td>8399</td>	<td>7727.08</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A3 5G (6GB+128GB)</td>	<td>14999</td>	<td>13953</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A3 PRO (8GB+128GB)</td>	<td>16999</td>	<td>15525</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A3 PRO (8GB+256GB)</td>	<td>18999</td>	<td>17357</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A31 (6GB+128GB)</td>	<td>16999</td>	<td>15250.8</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A32 (6GB+128GB)</td>	<td>21999</td>	<td>19736.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A32 (8GB+128GB)</td>	<td>21499</td>	<td>19288.04</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A33 5G (6GB+128GB)</td>	<td>25999</td>	<td>23325.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A33 5G (8GB+128GB)</td>	<td>27499</td>	<td>24670.77</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A34 5G (6GB+128GB)</td>	<td>20999</td>	<td>19308.4</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A34 5G (8GB+128GB)</td>	<td>22999</td>	<td>21147.39</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A34 5G (8GB+256GB)</td>	<td>24999</td>	<td>22986.37</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A35 5G (8GB+128GB)</td>	<td>25999</td>	<td>23325.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A35 5G (8GB+256GB)</td>	<td>28999</td>	<td>26017.03</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A36 5G (12GB+256GB)</td>	<td>38999</td>	<td>32827.83</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A36 5G (8GB+128GB)</td>	<td>32999</td>	<td>30148.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A36 5G (8GB+256GB)</td>	<td>35999</td>	<td>30086.71</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A38 (4GB+128GB)</td>	<td>9999</td>	<td>9469</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A3X (3GB+64GB)</td>	<td>6699</td>	<td>6163.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A3X (4GB+128GB)</td>	<td>7499</td>	<td>6899.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A4 5G (4GB+128GB)</td>	<td>9999</td>	<td>9199.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>A4 5G (4GB+64GB)</td>	<td>8999</td>	<td>8459.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A52 (6GB+128GB)</td>	<td>27499</td>	<td>24670.77</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A52 (8GB+128GB)</td>	<td>28999</td>	<td>26016.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A52S 5G (6GB+128GB)</td>	<td>32499</td>	<td>29156.25</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A52S 5G (8GB+128GB)</td>	<td>33999</td>	<td>30502.51</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A53 5G (6GB+128GB)</td>	<td>31999</td>	<td>28708.01</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A53 5G (8GB+128GB)</td>	<td>33499</td>	<td>30053.5</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A53 5G (8GB+256GB)</td>	<td>36499</td>	<td>32745.25</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A54 (6GB+128GB)</td>	<td>11990</td>	<td>11076</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A54 5G (8GB+128GB)</td>	<td>35499</td>	<td>31848</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A54 5G (8GB+256GB)</td>	<td>37499</td>	<td>33642.5</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A55 (4GB+128GB)</td>	<td>13999</td>	<td>13024</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A55 (4GB+64GB)</td>	<td>13499</td>	<td>12559</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A55 (6GB+128GB)</td>	<td>14999</td>	<td>13957</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A55 5G (12GB+256GB)</td>	<td>39999</td>	<td>35885.25</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A55 5G (8GB+128GB)</td>	<td>33999</td>	<td>30502.51</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A55 5G (8GB+256GB)</td>	<td>36999</td>	<td>33194.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A56 5G (12GB+256GB)</td>	<td>47999</td>	<td>41050.42</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A56 5G (8GB+128GB)</td>	<td>41999</td>	<td>38370.86</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A56 5G (8GB+256GB)</td>	<td>44999</td>	<td>38309.29</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A57 (4GB+64GB)</td>	<td>10999</td>	<td>10421</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A58 (6GB+128GB)</td>	<td>12999</td>	<td>12092</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A59 5G (4GB+128GB)</td>	<td>13999</td>	<td>13022</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A59 5G (6GB+128GB)</td>	<td>15499</td>	<td>14157</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A72 (8GB+128GB)</td>	<td>34999</td>	<td>31399.76</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A73 5G (8GB+128GB)</td>	<td>41999</td>	<td>37679.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>A73 5G (8GB+256GB)</td>	<td>44999</td>	<td>40370.73</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A76 (6GB+128GB)</td>	<td>16490</td>	<td>15065</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A77 (4GB+128GB)</td>	<td>15999</td>	<td>14617</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A77 (4GB+64GB)</td>	<td>15499</td>	<td>14160</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A77S (8GB+128GB)</td>	<td>16499</td>	<td>15059</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A78 4G (8GB+128GB)</td>	<td>15499</td>	<td>14420</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A78 5G (8GB+128GB)</td>	<td>17999</td>	<td>16439</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A79 5G (8GB+128GB)</td>	<td>17499</td>	<td>15984</td>	</tr>
+<tr>	<td>OPPO</td>	<td>A96 (8GB+128GB)</td>	<td>17999</td>	<td>16444</td>	</tr>
+<tr>	<td>Samsung</td>	<td>B110E</td>	<td>1649</td>	<td>1561.71</td>	</tr>
+<tr>	<td>Samsung</td>	<td>B310</td>	<td>1900</td>	<td>1822.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>B313E</td>	<td>2300</td>	<td>2218.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>B315E</td>	<td>1900</td>	<td>1822.88</td>	</tr>
+<tr>	<td>Realme</td>	<td>C11 2021 (2GB+32GB)</td>	<td>7499</td>	<td>6974.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C11 2021 (4GB+64GB)</td>	<td>8999</td>	<td>8369.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C21Y (3GB+32GB)</td>	<td>9499</td>	<td>8834.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C21Y (4GB+64GB)</td>	<td>10499</td>	<td>9764.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C25S (4GB+128GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C25S (4GB+64GB)</td>	<td>10999</td>	<td>10229.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C25Y (4GB+128GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C25Y (4GB+64GB)</td>	<td>10999</td>	<td>10229.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C30 (2GB+32GB)</td>	<td>6999</td>	<td>6509.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C30 (3GB+32GB)</td>	<td>7999</td>	<td>7439.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C30S (2GB+32GB)</td>	<td>6999</td>	<td>6509.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C30S (4GB+64GB)</td>	<td>8499</td>	<td>7904.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C31 (3GB+32GB)</td>	<td>9299</td>	<td>8648.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C31 (4GB+64GB)</td>	<td>9999</td>	<td>9299.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C33 (3GB+32GB)</td>	<td>8999</td>	<td>8369.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C33 (4GB+128GB)</td>	<td>10499</td>	<td>9764.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C33 (4GB+64GB)</td>	<td>9999</td>	<td>9299.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C33 2023 (4GB+128GB)</td>	<td>10499</td>	<td>9764.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C33 2023 (4GB+64GB)</td>	<td>9999</td>	<td>9299.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C35 (4GB+128GB)</td>	<td>12999</td>	<td>12089.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C35 (4GB+64GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C35 (6GB+128GB)</td>	<td>13999</td>	<td>13019.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C51 (4GB+128GB)</td>	<td>8999</td>	<td>8369.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C51 (4GB+64GB)</td>	<td>7999</td>	<td>7439.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C53 (4GB+128GB)</td>	<td>8999</td>	<td>8549.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C53 (6GB+64GB)</td>	<td>10999</td>	<td>10229.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C55 (4GB+64GB)</td>	<td>10999</td>	<td>10229.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C55 (6GB+64GB)</td>	<td>9999</td>	<td>9299.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C55 (8GB+128GB)</td>	<td>13999</td>	<td>13019.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C61 (4GB+128GB)</td>	<td>8499</td>	<td>8074.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C61 (4GB+64GB)</td>	<td>7699</td>	<td>7314.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C63 (4GB+128GB)</td>	<td>8999</td>	<td>8549.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C63 (4GB+64GB)</td>	<td>8499</td>	<td>8074.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C63 5G (4GB+128GB)</td>	<td>10499</td>	<td>9974.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C63 5G (6GB+128GB)</td>	<td>10999</td>	<td>10449.05</td>	</tr>
+<tr>	<td>Realme</td>	<td>C65 5G (4GB+128GB)</td>	<td>10999</td>	<td>10229.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C65 5G (4GB+64GB)</td>	<td>10499</td>	<td>9764.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C65 5G (6GB+128GB)</td>	<td>11999</td>	<td>11159.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C65 5G (8GB+128GB)</td>	<td>12999</td>	<td>12089.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C67 5G (4GB+128GB)</td>	<td>12999</td>	<td>12089.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>C67 5G (6GB+128GB)</td>	<td>14499</td>	<td>13484.07</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20 (8GB+256GB)</td>	<td>12999</td>	<td>11403</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20 Premier 5G  (8GB+512GB)</td>	<td>25999</td>	<td>22806</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20 PRO 5G  (8GB+128GB)</td>	<td>17999</td>	<td>15789</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20 PRO 5G  (8GB+256GB)</td>	<td>19999</td>	<td>17543</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20S PRO 5G (8GB+128GB)</td>	<td>17999</td>	<td>15789</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 20S PRO 5G (8GB+256GB)</td>	<td>19999</td>	<td>17543</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 30 5G (12GB+512GB)</td>	<td>23999</td>	<td>20338</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 30 5G (8GB+256GB)</td>	<td>19999</td>	<td>16948</td>	</tr>
+<tr>	<td>Tecno</td>	<td>CAMON 30 Premier 5G  (8GB+512GB)</td>	<td>39999</td>	<td>35087</td>	</tr>
+<tr>	<td>Samsung</td>	<td>E1200</td>	<td>1399</td>	<td>1344.76</td>	</tr>
+<tr>	<td>Samsung</td>	<td>E1215</td>	<td>1399</td>	<td>1344.76</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E13 (2GB+64GB)</td>	<td>5999</td>	<td>5741</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E13 (4GB+64GB)</td>	<td>6999</td>	<td>6698</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E13 (8GB+128GB)</td>	<td>7999</td>	<td>7655</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E22S</td>	<td>8999</td>	<td>8611</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E32 (4GB+64GB)</td>	<td>9999</td>	<td>9568</td>	</tr>
+<tr>	<td>Motorola</td>	<td>E40</td>	<td>9999</td>	<td>9568</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 30 5G (8GB+128GB)</td>	<td>26999</td>	<td>25591</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 30 Fusion 5G (8GB)</td>	<td>42999</td>	<td>40757</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 30 Ultra 5G (12GB)</td>	<td>59999</td>	<td>56871</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 30 Ultra 5G (8GB)</td>	<td>54999</td>	<td>52132</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 40 5G (8GB+256GB)</td>	<td>26999</td>	<td>25591</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 40 Neo 5G (12GB+256GB)</td>	<td>24999</td>	<td>23696</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 40 Neo 5G (8GB+128GB)</td>	<td>22999</td>	<td>21800</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 40 Neo 5G (8GB+256GB)</td>	<td>25999</td>	<td>24644</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 (8GB+128GB)</td>	<td>22999</td>	<td>21800</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 (8GB+256GB)</td>	<td>21999</td>	<td>20852</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 FUSION (12GB+256GB)</td>	<td>24999</td>	<td>23696</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 FUSION (8GB+128GB)</td>	<td>22999</td>	<td>21800</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 NEO (8GB+256GB)</td>	<td>20999</td>	<td>19904</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 PRO (12GB+256GB)</td>	<td>29999</td>	<td>28435</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 PRO (8GB+256GB)</td>	<td>27999</td>	<td>26539</td>	</tr>
+<tr>	<td>Motorola</td>	<td>EDGE 50 ULTRA (12GB+512GB)</td>	<td>52999</td>	<td>50236</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F02S (3GB+32GB)</td>	<td>9499</td>	<td>9096.5</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F04  (4GB+64GB)</td>	<td>7999</td>	<td>7660.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F05 (4GB+64GB)</td>	<td>7999</td>	<td>7660.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F06 5G (4GB+128GB)</td>	<td>9999</td>	<td>9575.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F06 5G (4GB+64GB)</td>	<td>8999</td>	<td>8617.69</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F06 5G (6GB+128GB)</td>	<td>11499</td>	<td>11011.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F12 (4GB+128GB)</td>	<td>12499</td>	<td>11969.38</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F12 (4GB+64GB)</td>	<td>11499</td>	<td>11011.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F13 (4GB+128GB)</td>	<td>11999</td>	<td>11490.57</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F13 (4GB+64GB)</td>	<td>10999</td>	<td>10346.52</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F14 5G (4GB+128GB)</td>	<td>11990</td>	<td>11278.73</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F14 5G (6GB+128GB)</td>	<td>13490</td>	<td>12689.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F14 LTE (4GB+64GB)</td>	<td>8999</td>	<td>8503.29</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F15 5G (4GB+128GB)</td>	<td>12499</td>	<td>11757.53</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F15 5G (6GB+128GB)</td>	<td>13499</td>	<td>12698.21</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F15 5G (8GB+128GB)</td>	<td>14999</td>	<td>14109.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F16 5G (4GB+128GB)</td>	<td>12499</td>	<td>11969.38</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F16 5G (6GB+128GB)</td>	<td>13999</td>	<td>13405.82</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F16 5G (8GB+128GB)</td>	<td>15499</td>	<td>14842.26</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F19 (6GB+128GB)</td>	<td>15490</td>	<td>14309</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F19 PRO (8GB+128GB)</td>	<td>17990</td>	<td>16618</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F19 PRO (8GB+256GB)</td>	<td>18990</td>	<td>17542</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F19 PRO PLUS (8GB+128GB)</td>	<td>19990</td>	<td>18465</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F19S (6GB+128GB)</td>	<td>19990</td>	<td>18517</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F21 PRO (8GB+128GB)</td>	<td>20999</td>	<td>19528</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F21 PRO 5G (8GB+128GB)</td>	<td>25999</td>	<td>24193</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F21S PRO (8GB+128GB)</td>	<td>21999</td>	<td>20471</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F21S PRO 5G (8GB+128GB)</td>	<td>25999</td>	<td>24193</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F22 (4GB+64GB)</td>	<td>12999</td>	<td>12448.19</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F22 (6GB+128GB)</td>	<td>14999</td>	<td>14363.45</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F23 5G (4GB+128GB)</td>	<td>17499</td>	<td>16460.92</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F23 5G (6GB+128GB)</td>	<td>18499</td>	<td>17401.6</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F23 5G (8GB+256GB)</td>	<td>19999</td>	<td>18271</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F25 PRO 5G (8GB+128GB)</td>	<td>23999</td>	<td>21919</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F25 PRO 5G (8GB+256GB)</td>	<td>25999</td>	<td>23743</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F27 5G (8GB+128GB)</td>	<td>20999</td>	<td>19172</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F27 5G (8GB+256GB)</td>	<td>22999</td>	<td>20996</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F27 PRO+ 5G (8GB+128GB)</td>	<td>25999</td>	<td>23556</td>	</tr>
+<tr>	<td>OPPO</td>	<td>F27 PRO+ 5G (8GB+256GB)</td>	<td>27999</td>	<td>25388</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F34 5G (6GB+128GB)</td>	<td>19999</td>	<td>18812.62</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F34 5G (8GB+128GB)</td>	<td>21999</td>	<td>20693.97</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F42 5G (6GB+128GB)</td>	<td>20999</td>	<td>19753.3</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F42 5G (8GB+128GB)</td>	<td>22999</td>	<td>22024.47</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F54 5G (8GB+256GB)</td>	<td>25999</td>	<td>24456.69</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F55 5G (12GB+256GB)</td>	<td>23999</td>	<td>22270.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F55 5G (8GB+128GB)</td>	<td>17999</td>	<td>16702.46</td>	</tr>
+<tr>	<td>Samsung</td>	<td>F55 5G (8GB+256GB)</td>	<td>20999</td>	<td>19486.36</td>	</tr>
+<tr>	<td>OPPO</td>	<td>FIND N2 FLIP (8GB+256GB) </td>	<td>89999</td>	<td>82290</td>	</tr>
+<tr>	<td>OPPO</td>	<td>FIND N3 FLIP (12GB+256GB)</td>	<td>75999</td>	<td>69604</td>	</tr>
+<tr>	<td>OPPO</td>	<td>Find X8 (12GB+256GB)</td>	<td>69999</td>	<td>65274</td>	</tr>
+<tr>	<td>OPPO</td>	<td>Find X8 (16GB+512GB)</td>	<td>79999</td>	<td>74599</td>	</tr>
+<tr>	<td>OPPO</td>	<td>Find X8 Pro (16GB+512GB)</td>	<td>99999</td>	<td>93249</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G04 (4GB+64GB)</td>	<td>6999</td>	<td>6698</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G04 (8GB+128GB)</td>	<td>7999</td>	<td>7655</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G04S (4GB+64GB)</td>	<td>7299</td>	<td>6985</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G05 (4GB+64GB)</td>	<td>6999</td>	<td>6698</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G13 (4GB+128GB)</td>	<td>9999</td>	<td>9568</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G14 (4GB+128GB)</td>	<td>8499</td>	<td>8133</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G22</td>	<td>10999</td>	<td>10525</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G24 POWER (4GB+128GB)</td>	<td>7999</td>	<td>7655</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G24 POWER (8GB+128GB)</td>	<td>8999</td>	<td>8611</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G32 (8GB+128GB)</td>	<td>10999</td>	<td>10525</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G34 5G (4GB+128GB)</td>	<td>10999</td>	<td>10525</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G34 5G (8GB+128GB)</td>	<td>11999</td>	<td>11482</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G35 (4GB+128GB)</td>	<td>9999</td>	<td>9568</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G54 5G (12GB+256GB)</td>	<td>16999</td>	<td>16113</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G54 5G (8GB+128GB)</td>	<td>14999</td>	<td>14217</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G62 5G (6GB+128GB)</td>	<td>15999</td>	<td>15165</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G62 5G (8GB+128GB)</td>	<td>16999</td>	<td>16113</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G64 (12GB+256GB)</td>	<td>15999</td>	<td>15310</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G64 (8GB+128GB)</td>	<td>13999</td>	<td>13396</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G73</td>	<td>18999</td>	<td>18009</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G73 (8GB+128GB)</td>	<td>18999</td>	<td>18009</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G82 5G (6GB+128GB)</td>	<td>19999</td>	<td>19138</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G82 5G (8GB+128GB)</td>	<td>21499</td>	<td>20378</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G84 5G (12GB+256GB)</td>	<td>18999</td>	<td>18009</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G84 5G (8GB+256GB)</td>	<td>15999</td>	<td>15165</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G85 (12GB+256GB)</td>	<td>19999</td>	<td>19138</td>	</tr>
+<tr>	<td>Motorola</td>	<td>G85 (8GB+128GB)</td>	<td>17999</td>	<td>17224</td>	</tr>
+<tr>	<td>Tecno</td>	<td>Go1 (3GB+64GB)</td>	<td>6899</td>	<td>6132</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 2 (12GB+256GB)</td>	<td>38999</td>	<td>36269.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 2 (8GB+128GB)</td>	<td>34999</td>	<td>32549.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 2 Pro (12GB+256GB)</td>	<td>47999</td>	<td>44639.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 2 Pro (8GB+128GB)</td>	<td>41999</td>	<td>39059.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 5G (12GB+256GB)</td>	<td>41999</td>	<td>39059.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 5G (8GB+128GB)</td>	<td>37999</td>	<td>35339.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6 5G (12GB+256GB)</td>	<td>37999</td>	<td>35339.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6 5G (16GB+512GB)</td>	<td>39999</td>	<td>37199.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6 5G (8GB+256GB)</td>	<td>35999</td>	<td>33479.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6T 5G (12GB+256GB)</td>	<td>35999</td>	<td>33479.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6T 5G (12GB+512GB)</td>	<td>39999</td>	<td>37199.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6T 5G (8GB+128GB)</td>	<td>30999</td>	<td>28829.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 6T 5G (8GB+256GB)</td>	<td>32999</td>	<td>30689.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 7 PRO (12GB+256GB)</td>	<td>59999</td>	<td>55799.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT 7 PRO (16GB+512GB)</td>	<td>65999</td>	<td>61379.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT ME (8GB+128GB)</td>	<td>27999</td>	<td>26039.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT ME (8GB+256GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 2 (12GB+256GB)</td>	<td>35999</td>	<td>33479.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 2 (8GB+128GB)</td>	<td>31999</td>	<td>29759.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3 (8GB+128GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3 (8GB+256GB)</td>	<td>28999</td>	<td>26969.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3 150 W (12GB+256GB)</td>	<td>32999</td>	<td>30689.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3T (6GB+128GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3T (8GB+128GB)</td>	<td>31999</td>	<td>29759.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>GT NEO 3T (8GB+256GB)</td>	<td>33999</td>	<td>31619.07</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K10 (6GB+128GB)</td>	<td>14990</td>	<td>14990</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K10 (8GB+128GB)</td>	<td>16990</td>	<td>16990</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K10 5G (6GB+128GB)</td>	<td>16499</td>	<td>16499</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K10 5G (8GB+128GB)</td>	<td>15999</td>	<td>15999</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K12X (6GB+128GB)</td>	<td>12999</td>	<td>12558</td>	</tr>
+<tr>	<td>OPPO</td>	<td>K12X (8GB+256GB)</td>	<td>15999</td>	<td>15457</td>	</tr>
+<tr>	<td>Redmi</td>	<td>K50I (6GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>K50I (8GB+256GB)</td>	<td>23999</td>	<td>22079.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M01 CORE AIRTEL (1GB+16GB)</td>	<td>4699</td>	<td>4499.89</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M02 (2GB+32GB)</td>	<td>7999</td>	<td>7660.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M04 (4GB+128GB)</td>	<td>9499</td>	<td>9096.5</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M04 (4GB+64GB)</td>	<td>7999</td>	<td>7660.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M05 (4GB+64GB)</td>	<td>7999</td>	<td>7660.06</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M06 5G (4GB+128GB)</td>	<td>9999</td>	<td>9575.31</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M06 5G (4GB+64GB)</td>	<td>8999</td>	<td>8617.69</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M06 5G (6GB+128GB)</td>	<td>11499</td>	<td>11011.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M12 (4GB+64GB)</td>	<td>11499</td>	<td>11011.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M12 (6GB+128GB)</td>	<td>13499</td>	<td>12927.01</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M13 (6GB+128GB)</td>	<td>12999</td>	<td>12227.87</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M13 4G (4GB+64GB)</td>	<td>10999</td>	<td>10532.94</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M13 5G (4GB+64GB)</td>	<td>12999</td>	<td>12448.19</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M13 5G (6GB+128GB)</td>	<td>14999</td>	<td>14363.45</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M14 4G (4GB+64GB)</td>	<td>8999</td>	<td>8503.29</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M14 4G (6GB+128GB)</td>	<td>11999</td>	<td>11338.04</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M14 5G (4GB+128GB)</td>	<td>12490</td>	<td>11960.76</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M14 5G (6GB+128GB)</td>	<td>13990</td>	<td>13397.2</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M15 5G (4GB+128GB)</td>	<td>13499</td>	<td>12270.24</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M15 5G (6GB+128GB)</td>	<td>14999</td>	<td>13687.61</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M15 5G (8GB+128GB)</td>	<td>16499</td>	<td>15104.99</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M16 5G (4GB+128GB)</td>	<td>12499</td>	<td>11969.38</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M16 5G (6GB+128GB)</td>	<td>13999</td>	<td>13405.82</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M16 5G (8GB+128GB)</td>	<td>15499</td>	<td>14842.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M21 2021 (4+64 GB) </td>	<td>12999</td>	<td>12448.19</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M32 (4GB+64GB)</td>	<td>13499</td>	<td>12927.01</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M32 (6GB+128GB)</td>	<td>15499</td>	<td>14842.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M32 5G (6GB+128GB)</td>	<td>16999</td>	<td>16278.7</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M326BH</td>	<td>22999</td>	<td>22024.47</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M33 5G (6GB+128GB)</td>	<td>18999</td>	<td>17871.94</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M33 5G (8GB+128GB)</td>	<td>20499</td>	<td>19282.96</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M34 5G (6GB+128GB)</td>	<td>13999</td>	<td>13168.55</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M34 5G (8GB+128GB)</td>	<td>15999</td>	<td>15049.91</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M34 5G (8GB+256GB)</td>	<td>18499</td>	<td>17401.6</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M35 5G (6GB+128GB)</td>	<td>19999</td>	<td>15986.34</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M35 5G (8GB+128GB)</td>	<td>21499</td>	<td>17403.72</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M35 5G (8GB+256GB)</td>	<td>24499</td>	<td>20238.46</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M52 5G (6GB+128GB)</td>	<td>29999</td>	<td>28727.86</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M52 5G (8GB+128GB)</td>	<td>31999</td>	<td>30100.75</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M53 5G (6GB+128GB)</td>	<td>28999</td>	<td>27278.72</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M53 5G (8GB+128GB)</td>	<td>30999</td>	<td>29160.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M55 5G (12GB+256GB)</td>	<td>26999</td>	<td>25054.16</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M55 5G (8GB+128GB)</td>	<td>20999</td>	<td>19486.36</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M55 5G (8GB+256GB)</td>	<td>23999</td>	<td>22270.26</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M55s (8GB+128GB)</td>	<td>20999</td>	<td>20198.19</td>	</tr>
+<tr>	<td>Samsung</td>	<td>M55s (8GB+256GB)</td>	<td>23999</td>	<td>23083.78</td>	</tr>
+<tr>	<td>Motorola</td>	<td>MOTO G45 5G (4GB+128GB)</td>	<td>10999</td>	<td>10525</td>	</tr>
+<tr>	<td>Motorola</td>	<td>MOTO G45 5G (8GB+128GB)</td>	<td>12999</td>	<td>12439</td>	</tr>
+<tr>	<td>Realme</td>	<td>N50 (4GB+64GB)</td>	<td>12999</td>	<td>12089.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>N50 (6GB+128GB)</td>	<td>15499</td>	<td>14414.07</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 105 DS (2023)</td>	<td>1349</td>	<td>1257</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 105 PDS (2022)</td>	<td>1549</td>	<td>1399</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 105 PSS (2022)</td>	<td>1399</td>	<td>1255</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 105 SS (2023)</td>	<td>1199</td>	<td>1133</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 106 4G DS (2023)</td>	<td>2199</td>	<td>2054</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 106 DS (2023)</td>	<td>1549</td>	<td>1429</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 106 SS (2023)</td>	<td>1399</td>	<td>1285</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 110 4G DS (2023)</td>	<td>2399</td>	<td>2247</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 110 DS (2022)</td>	<td>1699</td>	<td>1574</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 110 DS (2023)</td>	<td>1699</td>	<td>1574</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 130 DS (2023)</td>	<td>1849</td>	<td>1718</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 150 DS (2020)</td>	<td>2599</td>	<td>2439</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 215 DS</td>	<td>3249</td>	<td>3064</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 220 4G DS</td>	<td>3249</td>	<td>3064</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 225 DS</td>	<td>3749</td>	<td>3545</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 235 4G DS</td>	<td>3749</td>	<td>3545</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 3210 4G DS</td>	<td>3999</td>	<td>3785</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 5310 DS</td>	<td>3649</td>	<td>3449</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 5710 DS</td>	<td>4999</td>	<td>4707</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA 6310 DS</td>	<td>3499</td>	<td>3305</td>	</tr>
+<tr>	<td>Nokia</td>	<td>Nokia 8210 4G</td>	<td>3999</td>	<td>3785</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C01 PLUS (2/32)</td>	<td>6299</td>	<td>5765</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C12 Pro DS (2/64)</td>	<td>6999</td>	<td>6406</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C12 Pro DS (3/64)</td>	<td>7499</td>	<td>6863</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C12 Pro DS (4/64)</td>	<td>7499</td>	<td>6863</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C20 Plus DS (2/32)</td>	<td>7999</td>	<td>7321</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C20 Plus DS (3/32)</td>	<td>8999</td>	<td>8236</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C22 DS (4/64)</td>	<td>8499</td>	<td>7779</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C3 DS (3/32)</td>	<td>8999</td>	<td>7999</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C30 DS (4/64)</td>	<td>10999</td>	<td>10067</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA C32 DS (4/128)</td>	<td>7999</td>	<td>7321</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA G10 DS (4/64)</td>	<td>11999</td>	<td>11546</td>	</tr>
+<tr>	<td>Nokia</td>	<td>NOKIA G20 DS (4/64)</td>	<td>12999</td>	<td>11897</td>	</tr>
+<tr>	<td>Nokia</td>	<td>Nokia Tab T10 LTE (4/64)</td>	<td>14699</td>	<td>13453</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 2T (12GB+256GB)</td>	<td>33999</td>	<td>31959</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 2T (8GB+128GB)</td>	<td>28999</td>	<td>27259</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 3 5G (16GB+256GB)</td>	<td>37999</td>	<td>35719</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 3 5G (8GB+128GB)</td>	<td>33999</td>	<td>31959</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 4 5G (12GB+256GB)</td>	<td>32999</td>	<td>31019</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 4 5G (8GB+128GB)</td>	<td>27999</td>	<td>26319</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD 4 5G (8GB+256GB)</td>	<td>29999</td>	<td>28199</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 2 LITE (6GB+128GB)</td>	<td>17999</td>	<td>16919</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 2 LITE (8GB+128GB)</td>	<td>20999</td>	<td>19739</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 3 (12GB+256GB)</td>	<td>27999</td>	<td>26319</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 3 (8GB+128GB)</td>	<td>18999</td>	<td>17859</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 3 LITE (8GB+128GB)</td>	<td>16499</td>	<td>15509</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 3 LITE (8GB+256GB)</td>	<td>18499</td>	<td>17389</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 4 (8GB+128GB)</td>	<td>22999</td>	<td>21619</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 4 (8GB+256GB)</td>	<td>24999</td>	<td>23499</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 4 LITE 5G (8GB+128GB)</td>	<td>17999</td>	<td>16919</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>NORD CE 4 LITE 5G (8GB+256GB)</td>	<td>20999</td>	<td>19739</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 LITE (4GB+128GB)</td>	<td>12999</td>	<td>11959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 LITE (4GB+64GB)</td>	<td>11999</td>	<td>11039.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 LITE (6GB+128GB)</td>	<td>13999</td>	<td>12879.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 PRO (6GB+128GB)</td>	<td>15999</td>	<td>14719.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 PRO (8GB+128GB)</td>	<td>18999</td>	<td>17479.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 PRO MAX (6GB+128GB)</td>	<td>17999</td>	<td>16559.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10 PRO MAX (8GB+128GB)</td>	<td>21999</td>	<td>20239.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10S (6GB+128GB)</td>	<td>14499</td>	<td>13339.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10S (6GB+64GB)</td>	<td>12999</td>	<td>11959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10S (8GB+128GB)</td>	<td>15499</td>	<td>14259.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10T (4GB+64GB)</td>	<td>12499</td>	<td>11499.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 10T (6GB+128GB)</td>	<td>14499</td>	<td>13339.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 (4GB+64GB)</td>	<td>12999</td>	<td>11959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 (6GB+128GB)</td>	<td>14999</td>	<td>13799.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 (6GB+64GB)</td>	<td>13999</td>	<td>12879.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 PRO (6GB+128GB)</td>	<td>17999</td>	<td>16559.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 PRO (8GB+128GB)</td>	<td>19999</td>	<td>18399.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 PRO PLUS 5G (6GB+128GB)</td>	<td>19999</td>	<td>18399.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 PRO PLUS 5G (8GB+128GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11 PRO PLUS 5G (8GB+256GB)</td>	<td>22999</td>	<td>21159.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11S (6GB+128GB)</td>	<td>15499</td>	<td>14259.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11S (6GB+64GB)</td>	<td>14499</td>	<td>13339.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11S (8GB+128GB)</td>	<td>16499</td>	<td>15179.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11T 5G (6GB+128GB)</td>	<td>16499</td>	<td>15179.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11T 5G (6GB+64GB)</td>	<td>15499</td>	<td>14259.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 11T 5G (8GB+128GB)</td>	<td>18499</td>	<td>17019.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 4G (6GB+128GB)</td>	<td>12499</td>	<td>11499.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 4G (6GB+64GB)</td>	<td>10499</td>	<td>9659.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 5G (4GB+128GB)</td>	<td>14999</td>	<td>13799.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 5G (6GB+128GB)</td>	<td>16499</td>	<td>15179.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 5G (8GB+256GB)</td>	<td>18499</td>	<td>17019.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO 5G (12GB+256GB)</td>	<td>25499</td>	<td>23459.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO 5G (6GB+128GB)</td>	<td>21499</td>	<td>19779.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO 5G (8GB+128GB)</td>	<td>22499</td>	<td>20699.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO 5G (8GB+256GB)</td>	<td>23499</td>	<td>21619.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO PLUS 5G (12GB+256GB)</td>	<td>30499</td>	<td>28059.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 12 PRO PLUS 5G (8GB+256GB)</td>	<td>27499</td>	<td>25299.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 5G (12GB+256GB)</td>	<td>17499</td>	<td>16099.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 5G (6GB+128GB)</td>	<td>14999</td>	<td>13799.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 5G (8GB+256GB)</td>	<td>16999</td>	<td>15639.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO 5G (12GB+256GB)</td>	<td>22499</td>	<td>20699.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO 5G (8GB+128GB)</td>	<td>19999</td>	<td>18399.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO 5G (8GB+256GB)</td>	<td>21999</td>	<td>20239.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO PLUS 5G (12GB+256GB)</td>	<td>26999</td>	<td>24839.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO PLUS 5G (12GB+512GB)</td>	<td>28999</td>	<td>26679.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 13 PRO PLUS 5G (8GB+256GB)</td>	<td>24999</td>	<td>22999.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 5G (6GB+128GB)</td>	<td>17999</td>	<td>16559.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 5G (8GB+128GB)</td>	<td>18999</td>	<td>17479.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 5G (8GB+256GB)</td>	<td>20999</td>	<td>19319.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 PRO 5G (8GB+128GB)</td>	<td>24999</td>	<td>22999.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 PRO 5G (8GB+256GB)</td>	<td>26999</td>	<td>24839.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 PRO PLUS 5G (12GB+512GB)</td>	<td>35999</td>	<td>33119.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 PRO PLUS 5G (8GB+128GB)</td>	<td>30999</td>	<td>28519.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>NOTE 14 PRO PLUS 5G (8GB+256GB)</td>	<td>32999</td>	<td>30359.08</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 11 5G (16GB+256GB)</td>	<td>61999</td>	<td>58279</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 11 5G (8GB+128GB)</td>	<td>56999</td>	<td>53579</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 12 5G (12GB+256GB)</td>	<td>64999</td>	<td>61099</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 12 5G (16GB+512GB)</td>	<td>69999</td>	<td>65799</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 12R (16GB+256GB)</td>	<td>45999</td>	<td>43239</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 12R (8GB+128GB)</td>	<td>39999</td>	<td>37599</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OP 12R (8GB+256GB)</td>	<td>42999</td>	<td>40419</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>Op 13R 5G (12GB+256GB)</td>	<td>42999</td>	<td>40419</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>Op 13R 5G (16GB+512GB)</td>	<td>49999</td>	<td>46999</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OP_A3X (4GB+128GB)</td>	<td>12499</td>	<td>11621</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OP_A3X (4GB+64GB)</td>	<td>11499</td>	<td>10689</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OP_A3X 4G (4GB+128GB)</td>	<td>9999</td>	<td>9463</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OP_A3X 4G (4GB+64GB)</td>	<td>8999</td>	<td>8517</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>OPEN (16GB+512GB)</td>	<td>139999</td>	<td>131599</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OPPO A12 (3GB+32GB)</td>	<td>9990</td>	<td>9397</td>	</tr>
+<tr>	<td>OPPO</td>	<td>OPPO A12 (4GB+64GB)</td>	<td>10990</td>	<td>10338</td>	</tr>
+<tr>	<td>Realme</td>	<td>P1 SPEED 5G (8GB+128GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>P3 Pro 5G (12GB+256GB)</td>	<td>28999</td>	<td>26969.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>P3 Pro 5G (8GB+128GB)</td>	<td>23999</td>	<td>22319.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>P3 Pro 5G (8GB+256GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>P3X 5G (6GB+128GB)</td>	<td>13999</td>	<td>13019.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>P3X 5G (8GB+128GB)</td>	<td>14999</td>	<td>13949.07</td>	</tr>
+<tr>	<td>OnePlus</td>	<td>PAD 2 (12GB+256GB)</td>	<td>42999</td>	<td>40419</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD PRO 5G (8GB+128GB)</td>	<td>24999</td>	<td>22999.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD PRO 5G (8GB+256GB)</td>	<td>26999</td>	<td>24839.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD SE (4GB+128GB)</td>	<td>12999</td>	<td>11959.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD SE (4GB+64GB)</td>	<td>9999</td>	<td>9199.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD SE (6GB+128GB)</td>	<td>13999</td>	<td>12879.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>PAD SE (8GB+128GB)</td>	<td>14999</td>	<td>13799.08</td>	</tr>
+<tr>	<td>Tecno</td>	<td>Phantom V Flip (8GB+256GB)</td>	<td>39999</td>	<td>35087</td>	</tr>
+<tr>	<td>Tecno</td>	<td>Phantom V Fold (12GB+256GB)</td>	<td>69999</td>	<td>61403</td>	</tr>
+<tr>	<td>Tecno</td>	<td>Phantom X2 (8GB+256GB)</td>	<td>36999</td>	<td>32455</td>	</tr>
+<tr>	<td>Tecno</td>	<td>Phantom X2 Pro (12GB+256GB)</td>	<td>44999</td>	<td>39473</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA (6GB+128GB)</td>	<td>13499</td>	<td>11841</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA 6 NEO 5G (6GB+128GB)</td>	<td>11999</td>	<td>10525</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA 6 NEO 5G (8GB+256GB)</td>	<td>13999</td>	<td>12280</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA 6 PRO 5G  (12GB+256GB)</td>	<td>21999</td>	<td>19297</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA 6 PRO 5G (8GB+256GB)</td>	<td>19999</td>	<td>17543</td>	</tr>
+<tr>	<td>Tecno</td>	<td>POVA NEO (6GB+128GB)</td>	<td>9999</td>	<td>9090</td>	</tr>
+<tr>	<td>Motorola</td>	<td>RAZER 40 ULTRA (8GB+256GB)</td>	<td>49999</td>	<td>47392</td>	</tr>
+<tr>	<td>Motorola</td>	<td>RAZER 50 (8GB+256GB)</td>	<td>54999</td>	<td>52132</td>	</tr>
+<tr>	<td>Motorola</td>	<td>RAZER 50 ULTRA (12GB+512GB)</td>	<td>79999</td>	<td>75828</td>	</tr>
+<tr>	<td>Motorola</td>	<td>RAZR 40 (8GB+256GB)</td>	<td>49999</td>	<td>47392</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 10 (8GB+256GB)</td>	<td>29999</td>	<td>27399</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 10 PRO (12GB+256GB)</td>	<td>34999</td>	<td>32568</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 10 PRO Plus (12GB+256GB)</td>	<td>47999</td>	<td>43851</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 11 (8GB+128GB)</td>	<td>27999</td>	<td>25575</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 11 (8GB+256GB)</td>	<td>29999</td>	<td>27399</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 11 PRO (12GB+256GB)</td>	<td>37999</td>	<td>34716</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 12 (8GB+256GB)</td>	<td>32999</td>	<td>30147</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 12 PRO (12GB+256GB)</td>	<td>36999</td>	<td>33803</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 12 PRO (12GB+512GB)</td>	<td>40999</td>	<td>37451</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 13 (8GB+128GB)</td>	<td>37999</td>	<td>34688</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 13 (8GB+256GB)</td>	<td>39999</td>	<td>36513</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 13 PRO (12GB+256GB)</td>	<td>49999</td>	<td>45641</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 13 PRO (12GB+512GB)</td>	<td>54999</td>	<td>50205</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 7 (8GB+256GB)</td>	<td>28999</td>	<td>26428</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 7 PRO 5G (12GB+256GB)</td>	<td>34999</td>	<td>32490</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 8 (8GB+128GB)</td>	<td>29999</td>	<td>27848</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 8 PRO (12GB+256GB)</td>	<td>45999</td>	<td>42701</td>	</tr>
+<tr>	<td>OPPO</td>	<td>RENO 8T (8GB+128GB)</td>	<td>29999</td>	<td>27893</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 12 5G (6GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 12 5G (8GB+128GB)</td>	<td>16999</td>	<td>15809.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 12 plus 5G (8GB+128GB)</td>	<td>20999</td>	<td>19529.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 12 plus 5G (8GB+256GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 13 5G (8GB+128GB)</td>	<td>15999</td>	<td>14879.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 13 5G (8GB+256GB)</td>	<td>17999</td>	<td>16739.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 13 plus 5G (12GB+256GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 13 plus 5G (8GB+128GB)</td>	<td>20999</td>	<td>19529.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 13 plus 5G (8GB+256GB)</td>	<td>22999</td>	<td>21389.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO 5G (8GB+128GB)</td>	<td>24999</td>	<td>23249.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO 5G (8GB+256GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO LITE 5G (8GB+128GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO LITE 5G (8GB+256GB)</td>	<td>23999</td>	<td>22319.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO PLUS 5G (12GB+256GB)</td>	<td>34999</td>	<td>32549.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO PLUS 5G (8GB+128GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>RM 14 PRO PLUS 5G (8GB+256GB)</td>	<td>31999</td>	<td>29759.07</td>	</tr>
+<tr>	<td>Motorola</td>	<td>Rzar 40 ultra</td>	<td>79999</td>	<td>75828</td>	</tr>
+<tr>	<td>VIVO</td>	<td>S1 (4GB+128GB)</td>	<td>16990</td>	<td>15849</td>	</tr>
+<tr>	<td>VIVO</td>	<td>S1 (6GB+128GB)</td>	<td>19990</td>	<td>18675</td>	</tr>
+<tr>	<td>VIVO</td>	<td>S1 (6GB+64GB)</td>	<td>18990</td>	<td>17733</td>	</tr>
+<tr>	<td>VIVO</td>	<td>S1 PRO (8GB+128GB)</td>	<td>18990</td>	<td>17733</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S20 FE (8GB+128GB)</td>	<td>40999</td>	<td>38393.13</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S20 FE 5G (8GB+128GB)</td>	<td>29999</td>	<td>28092.28</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S21 5G (8GB+128GB)</td>	<td>69999</td>	<td>64766.01</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S21 FE 5G 2023 (8GB+256GB)</td>	<td>41999</td>	<td>39329.57</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S21 ULTRA (12GB+256GB)</td>	<td>105999</td>	<td>98477.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S21FE 5G (8GB+128GB)</td>	<td>53999</td>	<td>51710.91</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S21FE 5G (8GB+256GB)</td>	<td>57999</td>	<td>55541.42</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 (8GB+128GB)</td>	<td>36999</td>	<td>34490.59</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 (8GB+256GB)</td>	<td>68999</td>	<td>63829.57</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 PLUS (8GB+128GB)</td>	<td>84999</td>	<td>78812.62</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 PLUS (8GB+256GB)</td>	<td>88999</td>	<td>82558.39</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 ULTRA (12GB+1TB)</td>	<td>134999</td>	<td>125634.66</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 ULTRA (12GB+256GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S22 ULTRA (12GB+512GB)</td>	<td>118999</td>	<td>110651.61</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 (8GB+128GB)</td>	<td>64999</td>	<td>60083.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 (8GB+256GB)</td>	<td>69999</td>	<td>64766.01</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 FE 5G 2023 (8GB+128GB)</td>	<td>54999</td>	<td>50719.4</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 FE 5G 2023 (8GB+256GB)</td>	<td>59999</td>	<td>55401.61</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 Plus (8GB+256GB)</td>	<td>84999</td>	<td>78812.62</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 Plus (8GB+512GB)</td>	<td>94999</td>	<td>88177.03</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 ULTRA (12GB+1TB)</td>	<td>139999</td>	<td>130316.86</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 ULTRA (12GB+256GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S23 ULTRA (12GB+512GB)</td>	<td>119999</td>	<td>111588.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 (8GB+128GB)</td>	<td>64999</td>	<td>60083.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 (8GB+256GB)</td>	<td>70999</td>	<td>65702.45</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 (8GB+512GB)</td>	<td>82999</td>	<td>76939.74</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 FE 5G (8GB+128GB)</td>	<td>59999</td>	<td>50414.32</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 FE 5G (8GB+256GB)</td>	<td>65999</td>	<td>56032.96</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 Plus (12GB+256GB)</td>	<td>99999</td>	<td>92859.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 Plus (12GB+512GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 ULTRA (12GB+1TB)</td>	<td>149999</td>	<td>139681.27</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 ULTRA (12GB+256GB)</td>	<td>119999</td>	<td>111588.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S24 ULTRA (12GB+512GB)</td>	<td>129999</td>	<td>120952.45</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 (12GB+128GB)</td>	<td>74999</td>	<td>69448.22</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 (12GB+256GB)</td>	<td>80999</td>	<td>75066.86</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 (12GB+512GB)</td>	<td>92999</td>	<td>86304.15</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 Plus (12GB+256GB)</td>	<td>99999</td>	<td>92859.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 Plus (12GB+512GB)</td>	<td>111999</td>	<td>104096.52</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 ULTRA (12GB+1TB)</td>	<td>165999</td>	<td>154664.32</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 ULTRA (12GB+256GB)</td>	<td>129999</td>	<td>120952.45</td>	</tr>
+<tr>	<td>Samsung</td>	<td>S25 ULTRA (12GB+512GB)</td>	<td>141999</td>	<td>132189.74</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 10 5G (8GB+128GB)</td>	<td>13999</td>	<td>12280</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 10 PRO (8GB+128GB)</td>	<td>10999</td>	<td>9648</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 10 Pro 5G (8GB+128GB)</td>	<td>10999</td>	<td>9999</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 10C (8GB+128GB)</td>	<td>9499</td>	<td>8635</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 20 (8GB+128GB)</td>	<td>8499</td>	<td>7726</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 20 (8GB+256GB)</td>	<td>8999</td>	<td>8181</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 20 PRO 5G (8GB+128GB)</td>	<td>15999</td>	<td>13792</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 20 PRO 5G (8GB+256GB)</td>	<td>16999</td>	<td>14654</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 30C 5G (4GB+128GB)</td>	<td>10499</td>	<td>9545</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 30C 5G (4GB+64GB)</td>	<td>9999</td>	<td>9090</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 30C 5G (8GB+128GB)</td>	<td>12999</td>	<td>11403</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 7 (2GB+32GB)</td>	<td>8790</td>	<td>7991</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK 8 (4GB+64GB)</td>	<td>8999</td>	<td>8181</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 1 KL4 (3GB+64GB)</td>	<td>6899</td>	<td>6272</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 1 KL4 (4GB+64GB)</td>	<td>7299</td>	<td>6635</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 2021 (2GB+32GB)</td>	<td>8999</td>	<td>8181</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 2023 (3GB+32GB)</td>	<td>6499</td>	<td>5908</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 2023 (4GB+64GB)</td>	<td>7199</td>	<td>6545</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 2024 (3GB+64GB)</td>	<td>6899</td>	<td>6272</td>	</tr>
+<tr>	<td>Tecno</td>	<td>SPARK GO 2024 (4GB+64GB)</td>	<td>7199</td>	<td>6545</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 (4GB+128GB)</td>	<td>14499</td>	<td>13885</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 (6GB+128GB)</td>	<td>15999</td>	<td>15321</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 (8GB+128GB)</td>	<td>17999</td>	<td>17236</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 44W (4GB+128GB)</td>	<td>14499</td>	<td>13885</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 44W (6GB+128GB)</td>	<td>15999</td>	<td>15321</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 44W (8GB+128GB)</td>	<td>17999</td>	<td>17236</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 5G (4GB+128GB)</td>	<td>15990</td>	<td>15312</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 5G (6GB+128GB)</td>	<td>16990</td>	<td>16270</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 5G (8GB+128GB)</td>	<td>19990</td>	<td>19143</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 PRO (6GB+128GB)</td>	<td>23999</td>	<td>22982</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1 PRO (8GB+128GB)</td>	<td>24999</td>	<td>23940</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1X (4GB+128GB)</td>	<td>12999</td>	<td>12448</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1X (4GB+64GB)</td>	<td>11999</td>	<td>11491</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T1X (6GB+128GB)</td>	<td>14999</td>	<td>14363</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2 5G (6GB+128GB)</td>	<td>15999</td>	<td>15321</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2 5G (8GB+128GB)</td>	<td>17999</td>	<td>17236</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2 Pro 5G (8GB+128GB)</td>	<td>22999</td>	<td>22024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2 Pro 5G (8GB+256GB)</td>	<td>23999</td>	<td>22982</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T220N TAB A7 LITE WIFI</td>	<td>11999</td>	<td>11236.35</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T225N A7 LITE (3GB+32GB)</td>	<td>14999</td>	<td>11730</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2X (4GB+128GB)</td>	<td>11999</td>	<td>11491</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2X (6GB+128GB)</td>	<td>12999</td>	<td>12448</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T2X (8GB+128GB)</td>	<td>14999</td>	<td>14363</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 5G (8GB+128GB)</td>	<td>18499</td>	<td>17715</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 5G (8GB+256GB)</td>	<td>20499</td>	<td>19630</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 Lite 5G (4GB+128GB)</td>	<td>10499</td>	<td>10054</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 Lite 5G (6GB+128GB)</td>	<td>11499</td>	<td>11012</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 PRO 5G (8GB+128GB)</td>	<td>22999</td>	<td>22024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 PRO 5G (8GB+256GB)</td>	<td>24999</td>	<td>23940</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 Ultra 5G (12GB+256GB)</td>	<td>33999</td>	<td>32558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 Ultra 5G (8GB+128GB)</td>	<td>29999</td>	<td>28728</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3 Ultra 5G (8GB+256GB)</td>	<td>31999</td>	<td>30643</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T385N TAB A (2GB+16GB)</td>	<td>17999</td>	<td>16847.94</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3x 5G (4GB+128GB)</td>	<td>12499</td>	<td>11969</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3X 5G (6GB+128GB)</td>	<td>13999</td>	<td>13406</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T3X 5G (8GB+128GB)</td>	<td>15499</td>	<td>14842</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T4X 5G (6GB+128GB)</td>	<td>13999</td>	<td>13406</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T4X 5G (8GB+128GB)</td>	<td>14999</td>	<td>14363</td>	</tr>
+<tr>	<td>VIVO</td>	<td>T4X 5G (8GB+256GB)</td>	<td>16999</td>	<td>16279</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T505N TAB A7</td>	<td>21999</td>	<td>20600.76</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T733 S7 FE WIFI (4GB+64GB)</td>	<td>37999</td>	<td>35583.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T735NA TAB S7FE LTE (4GB+64GB)</td>	<td>44999</td>	<td>42138.89</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T735NE TAB S7FE LTE (6GB+128GB)</td>	<td>44999</td>	<td>42138.89</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T875N S7 LTE</td>	<td>63999</td>	<td>59147.37</td>	</tr>
+<tr>	<td>Samsung</td>	<td>T975N S7 PLUS LTE</td>	<td>78999</td>	<td>73977.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB A8 LTE (3GB+32GB)</td>	<td>16999</td>	<td>15918.56</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB A8 LTE (4GB+64GB)</td>	<td>18999</td>	<td>17791.44</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB A8 WIFI (3GB+32GB)</td>	<td>12999</td>	<td>12172.79</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB A8 WIFI (4GB+64GB)</td>	<td>14999</td>	<td>14045.67</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 (LTE) (4GB+64GB)</td>	<td>15999</td>	<td>14982.11</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 (WIFI) (4GB+64GB)</td>	<td>12999</td>	<td>12172.79</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 plus (LTE) (4GB+64GB)</td>	<td>22999</td>	<td>21537.2</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 plus (LTE) (8GB+128GB)</td>	<td>24999</td>	<td>23410.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 plus (WiFi) (4GB+64GB)</td>	<td>18999</td>	<td>17791.44</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab A9 plus (WiFi) (8GB+128GB)</td>	<td>20999</td>	<td>19664.32</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10 ULTRA 5G LTE  (12GB+256GB)</td>	<td>122999</td>	<td>115181.27</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10 ULTRA 5G LTE  (12GB+512GB)</td>	<td>133999</td>	<td>125482.11</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10 Ultra Wifi 256GB</td>	<td>108999</td>	<td>102071.1</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10 Ultra Wifi 512GB</td>	<td>119999</td>	<td>112371.94</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10+ 5G</td>	<td>104999</td>	<td>98325.33</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S10+ Wifi (12GB+256GB)</td>	<td>90999</td>	<td>85215.17</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S6 Lite (10.4")</td>	<td>30999</td>	<td>29028.72</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S6 Lite LTE (128GB)</td>	<td>33999</td>	<td>31838.05</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S6 LITE LTE (4GB+64GB)</td>	<td>34999</td>	<td>32774.49</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S6 Lite Wifi </td>	<td>30999</td>	<td>29028.72</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S6 Lite Wifi (128GB)</td>	<td>28999</td>	<td>27155.84</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S6 LITE WIFI (4GB+64GB)</td>	<td>30999</td>	<td>29028.72</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S8 LTE (8GB+128GB)</td>	<td>66999</td>	<td>62740.59</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S8 Plus LTE (8+128GB)</td>	<td>85999</td>	<td>80532.96</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S8 Plus Wifi (8+128GB)</td>	<td>72999</td>	<td>68359.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S8 ULTRA LTE (12GB+256GB)</td>	<td>120999</td>	<td>113308.39</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S8 ULTRA Wifi (12GB+256GB)</td>	<td>106999</td>	<td>100198.22</td>	</tr>
+<tr>	<td>Samsung</td>	<td>TAB S8 Wifi (8GB+128GB)</td>	<td>50999</td>	<td>47757.54</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 5G (12GB+256GB)</td>	<td>96999</td>	<td>90833.81</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 5G (8GB+128GB)</td>	<td>85999</td>	<td>80532.96</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE (LTE) (6GB+128GB)</td>	<td>44999</td>	<td>42138.89</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE (LTE) (8GB+256GB)</td>	<td>55999</td>	<td>52439.74</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE (WIFI) (6GB+128GB)</td>	<td>36999</td>	<td>32723.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE (WIFI) (8GB+256GB)</td>	<td>47999</td>	<td>44948.22</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE Plus (LTE) (12GB+256GB)</td>	<td>64999</td>	<td>60867.71</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE Plus (LTE) (8GB+128GB)</td>	<td>54999</td>	<td>51503.3</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE Plus (WIFI) (12GB+256GB)</td>	<td>56999</td>	<td>52414.32</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 FE Plus (WIFI) (8GB+128GB)</td>	<td>46999</td>	<td>44011.78</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 Ultra 5G (12+256GB)</td>	<td>122999</td>	<td>115181.27</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 Ultra 5G (12+512GB)</td>	<td>133999</td>	<td>125482.11</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 Ultra WiFi (12+512GB)</td>	<td>119999</td>	<td>112371.94</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 Ultra WiFi (12GB+256GB)</td>	<td>108999</td>	<td>102071.1</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 WiFi (12GB+256GB)</td>	<td>83999</td>	<td>78660.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9 WiFi (8GB+128GB)</td>	<td>72999</td>	<td>68359.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9+ 5G (12GB+256GB)</td>	<td>104999</td>	<td>98325.33</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Tab S9+ WiFi (12GB+256GB)</td>	<td>90999</td>	<td>85215.17</td>	</tr>
+<tr>	<td>VIVO</td>	<td>U20 (8GB+128GB)</td>	<td>19990</td>	<td>18675</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V15 (6GB+64GB)</td>	<td>21990</td>	<td>20558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V15 PRO (6GB+128GB)</td>	<td>21990</td>	<td>20558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V15 PRO (8GB+128GB)</td>	<td>25990</td>	<td>24325</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V17 (8GB+128GB)</td>	<td>24990</td>	<td>23383</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V17 PRO (8GB+128GB)</td>	<td>29990</td>	<td>28092</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V19 (8GB+128GB)</td>	<td>24990</td>	<td>23383</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V19 (8GB+256GB)</td>	<td>27990</td>	<td>26208</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V20 (8GB+128GB)</td>	<td>22990</td>	<td>21500</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V20 (8GB+256GB)</td>	<td>25990</td>	<td>24325</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V20 PRO (8GB+128GB)</td>	<td>29990</td>	<td>28092</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V20 SE (8GB+128GB)</td>	<td>19990</td>	<td>18675</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V21 (8GB+256GB)</td>	<td>30990</td>	<td>29033</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V21 5G (8GB+128GB)</td>	<td>27990</td>	<td>26208</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V21 e (8GB+128GB)</td>	<td>23990</td>	<td>22441</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V21 E 5G (8GB+128GB)</td>	<td>23990</td>	<td>22441</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V23 5G (12GB+256GB)</td>	<td>34990</td>	<td>32800</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V23 5G (8GB+128GB)</td>	<td>29990</td>	<td>28092</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V23 E (8GB+128GB)</td>	<td>24999</td>	<td>23392</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V23 PRO 5G  (12GB+256GB)</td>	<td>43990</td>	<td>41276</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V23 PRO 5G  (8GB+128GB)</td>	<td>38990</td>	<td>36567</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V25 (12GB+256GB)</td>	<td>31999</td>	<td>29984</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V25 (8GB+128GB)</td>	<td>27999</td>	<td>26217</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V25 PRO (12GB+ 256GB)</td>	<td>39999</td>	<td>37518</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V25 PRO (8GB+128GB)</td>	<td>35999</td>	<td>33751</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V27 (12GB+256GB)</td>	<td>36999</td>	<td>34693</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V27 (8GB+128GB)</td>	<td>32999</td>	<td>30926</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V27 PRO (12GB+256GB)</td>	<td>42999</td>	<td>40343</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V27 PRO (8GB+128GB)</td>	<td>37999</td>	<td>35634</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V27 PRO (8GB+256GB)</td>	<td>39999</td>	<td>37518</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29 5G (12GB+256GB)</td>	<td>36999</td>	<td>34693</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29 5G (8GB+128GB)</td>	<td>32999</td>	<td>30926</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29 PRO (12GB+256GB)</td>	<td>42999</td>	<td>40343</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29 PRO (8GB+256GB)</td>	<td>39999</td>	<td>37518</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29e (8GB+128GB)</td>	<td>25999</td>	<td>24334</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V29e (8GB+256GB)</td>	<td>27999</td>	<td>26217</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30 5G (12GB+256GB)</td>	<td>33999</td>	<td>31867</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30 5G (8GB+128GB)</td>	<td>29999</td>	<td>28101</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30 5G (8GB+256GB)</td>	<td>31999</td>	<td>29984</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30 PRO (12GB+512GB)</td>	<td>46999</td>	<td>44110</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30 PRO (8GB+256GB)</td>	<td>41999</td>	<td>39401</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30e (8GB+128GB)</td>	<td>25999</td>	<td>24334</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V30e (8GB+256GB)</td>	<td>27999</td>	<td>26217</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40 5G (12GB+512GB)</td>	<td>41999</td>	<td>39401</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40 5G (8GB+128GB)</td>	<td>34999</td>	<td>32809</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40 5G (8GB+256GB)</td>	<td>36999</td>	<td>33993</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40 PRO (12GB+512GB)</td>	<td>55999</td>	<td>50935</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40 PRO (8GB+256GB)</td>	<td>49999</td>	<td>45585</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40E (8GB+128GB)</td>	<td>26999</td>	<td>24875</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V40E (8GB+256GB)</td>	<td>28999</td>	<td>26709</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V50 5G (12GB+512GB)</td>	<td>40999</td>	<td>37509</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V50 5G (8GB+128GB)</td>	<td>34999</td>	<td>32209</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V50 5G (8GB+256GB)</td>	<td>36999</td>	<td>33993</td>	</tr>
+<tr>	<td>VIVO</td>	<td>V7 Plus (6GB+64GB)</td>	<td>21990</td>	<td>20558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X Fold3 Pro(16GB+512GB)</td>	<td>159999</td>	<td>147796</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X100 (12GB+256GB)</td>	<td>63999</td>	<td>59118</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X100 (16GB+512GB)</td>	<td>69999</td>	<td>64660</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X100 Pro (16GB+512GB)</td>	<td>89999</td>	<td>83897</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X200 5G (12GB+256GB)</td>	<td>65999</td>	<td>60965</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X200 5G (16GB+512GB)</td>	<td>71999</td>	<td>66507</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X200 PRO 5G (16GB+512GB)</td>	<td>94999</td>	<td>88558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X50 (8GB+128GB)</td>	<td>34990</td>	<td>32800</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X50 (8GB+256GB)</td>	<td>37990</td>	<td>35626</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X50 PRO (8GB+256GB)</td>	<td>49990</td>	<td>46926</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X60 (12GB+256GB)</td>	<td>39990</td>	<td>37509</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X60 (8GB+128GB)</td>	<td>34990</td>	<td>32800</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X60 PRO (12GB+256GB)</td>	<td>49990</td>	<td>46926</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X60 PRO PLUS (12GB+256GB)</td>	<td>69990</td>	<td>65760</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 (6GB+128GB)</td>	<td>19999</td>	<td>18599.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 (8GB+128GB)</td>	<td>21999</td>	<td>20459.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 MAX (12GB+256GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 MAX (8GB+128GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 MAX 5G (12GB+256GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 MAX 5G (8GB+128GB)</td>	<td>26999</td>	<td>25109.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 PRO (8GB+128GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>Realme</td>	<td>X7 PRO 5G (8GB+128GB)</td>	<td>29999</td>	<td>27899.07</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X70 PRO (12GB+256GB)</td>	<td>52990</td>	<td>49751</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X70 PRO (8GB+128GB)</td>	<td>46990</td>	<td>44101</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X70 PRO (8GB+256GB)</td>	<td>49990</td>	<td>46926</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X70 PRO PLUS (12GB+256GB)</td>	<td>79990</td>	<td>75178</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X80 (12GB+256GB)</td>	<td>59999</td>	<td>55931</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X80 (8GB+128GB)</td>	<td>54999</td>	<td>51270</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X80 PRO (12GB+256GB)</td>	<td>79999</td>	<td>75253</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X90 (12GB+256GB)</td>	<td>63999</td>	<td>59660</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X90 (8GB+256GB)</td>	<td>59999</td>	<td>55931</td>	</tr>
+<tr>	<td>VIVO</td>	<td>X90 PRO (12GB+256GB)</td>	<td>74999</td>	<td>70550</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI 14 (12GB+512GB)</td>	<td>69999</td>	<td>64399.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI 14 CIVI (12GB+512GB)</td>	<td>43999</td>	<td>40479.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI 14 CIVI (8GB+256GB)</td>	<td>39999</td>	<td>36799.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI 14 Ultra (16GB+512GB)</td>	<td>99999</td>	<td>91999.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI PAD 6 (6GB+128GB)</td>	<td>23999</td>	<td>22079.08</td>	</tr>
+<tr>	<td>Redmi</td>	<td>XIAOMI PAD 6 (8GB+256GB)</td>	<td>25999</td>	<td>23919.08</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y01 (2GB+32GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y01A (2GB+32GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y02 (2GB+32GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y02 (3GB+32GB)</td>	<td>6999</td>	<td>6584</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y02T (4GB+64GB)</td>	<td>7499</td>	<td>7054</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y100 (8GB+128GB)</td>	<td>21999</td>	<td>20567</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y100A (8GB+128GB)</td>	<td>21999</td>	<td>20567</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y100A 5G (8GB+256GB)</td>	<td>23999</td>	<td>22450</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y11 (3GB+32GB)</td>	<td>9490</td>	<td>8903</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y12 (3GB+64GB)</td>	<td>10990</td>	<td>10199</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y12 (4GB+32GB)</td>	<td>13490</td>	<td>12554</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y12G (3GB+32GB)</td>	<td>10990</td>	<td>10199</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y12G (3GB+64GB)</td>	<td>11990</td>	<td>11141</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y12S (3GB+32GB)</td>	<td>10990</td>	<td>10199</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y15 (4GB+ 64GB)</td>	<td>12990</td>	<td>12083</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y15C (3GB+32GB)</td>	<td>9499</td>	<td>8912</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y15C (3GB+64GB)</td>	<td>10499</td>	<td>9866</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y15S (3GB+32GB)</td>	<td>9499</td>	<td>8912</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y16 (3GB+32GB)</td>	<td>9999</td>	<td>9389</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y16 (3GB+64GB)</td>	<td>10499</td>	<td>9866</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y16 (4GB+128GB)</td>	<td>9999</td>	<td>9266</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y16 (4GB+64GB)</td>	<td>8999</td>	<td>8324</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y16 JIO (4GB+64GB)</td>	<td>8999</td>	<td>8324</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y17 (4GB+128GB)</td>	<td>14990</td>	<td>13966</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y17s (4GB+128GB)</td>	<td>10499</td>	<td>9737</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y17s (4GB+64GB)</td>	<td>9499</td>	<td>8796</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y18 (4GB+128GB)</td>	<td>8499</td>	<td>7995</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y18 (4GB+64GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y18e (4GB+64GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y18i (4GB+64GB)</td>	<td>7999</td>	<td>7524</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y18T (4GB+128GB)</td>	<td>8499</td>	<td>7995</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y19 (4GB+128GB)</td>	<td>14990</td>	<td>13966</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y1S (2GB+32GB)</td>	<td>8490</td>	<td>7845</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y1S (3GB+32GB)</td>	<td>9490</td>	<td>8787</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20 (4GB+64GB)</td>	<td>13990</td>	<td>13024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20 (6GB+64GB)</td>	<td>13990</td>	<td>13024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y200 5G (8GB+128GB)</td>	<td>21999</td>	<td>20567</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y200 5G (8GB+256GB)</td>	<td>21999</td>	<td>20267</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y200 PRO 5G (8GB+128GB)</td>	<td>24999</td>	<td>23392</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y200e 5G (6GB+128GB)</td>	<td>19999</td>	<td>18683</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y200e 5G (8GB+128GB)</td>	<td>19999</td>	<td>18383</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20A (3GB+64GB)</td>	<td>11990</td>	<td>11141</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20G (4GB+64GB)</td>	<td>13990</td>	<td>13024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20G (6GB+128GB)</td>	<td>15990</td>	<td>14908</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20I (3GB+64GB)</td>	<td>11990</td>	<td>11141</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y20T (6GB+64GB)</td>	<td>15490</td>	<td>14437</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21 (4GB+128GB)</td>	<td>15490</td>	<td>14437</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21 (4GB+64GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21 JIO (4GB+64GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21A (4GB+64GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21A JIO (4GB+64GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21E (3GB+64GB)</td>	<td>12499</td>	<td>11621</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21G (4GB+64GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y21T (4GB+128GB)</td>	<td>15499</td>	<td>14446</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y22 (4GB+128GB)</td>	<td>13499</td>	<td>12563</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y22 (4GB+64GB)</td>	<td>14499</td>	<td>13504</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y22 (6GB+128GB)</td>	<td>15499</td>	<td>14446</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y27 (6GB+128GB)</td>	<td>10999</td>	<td>10208</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28 5G (4GB+128GB)</td>	<td>12999</td>	<td>12091</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28 5G (6GB+128GB)</td>	<td>14499</td>	<td>13504</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28 5G (8GB+128GB)</td>	<td>15999</td>	<td>14916</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28e 5G (4GB+128GB)</td>	<td>11499</td>	<td>10770</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28e 5G (4GB+128GB) (W/o)</td>	<td>10999</td>	<td>10158</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28e 5G (4GB+64GB)</td>	<td>10499</td>	<td>9816</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28e 5G (4GB+64GB) (W/o)</td>	<td>9999</td>	<td>9216</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28s 5G (4GB+128GB)</td>	<td>12999</td>	<td>12041</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28s 5G (6GB+128GB)</td>	<td>14499</td>	<td>13354</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y28s 5G (8GB+128GB)</td>	<td>15999</td>	<td>14666</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y29 5G (4GB+128GB)</td>	<td>13999</td>	<td>12983</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y29 5G (6GB+128GB)</td>	<td>15499</td>	<td>14296</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y29 5G (8GB+128GB)</td>	<td>16999</td>	<td>15608</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y29 5G (8GB+256GB)</td>	<td>18999</td>	<td>17442</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y30 (4GB+128GB)</td>	<td>13990</td>	<td>13024</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y30 (6GB+128GB)</td>	<td>14990</td>	<td>13966</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y300 5G (8GB+128GB)</td>	<td>21999</td>	<td>20267</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y300 5G (8GB+256GB)</td>	<td>23999</td>	<td>22100</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y300+ 5G (8GB+128GB)</td>	<td>23999</td>	<td>22100</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y31 (6GB+128GB)</td>	<td>16490</td>	<td>15379</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y33S (8GB+128GB)</td>	<td>17990</td>	<td>16791</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y33T (8GB+128GB)</td>	<td>17990</td>	<td>16791</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y35 (8GB+128GB)</td>	<td>16999</td>	<td>15858</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y36 4G (8GB+128GB)</td>	<td>14999</td>	<td>13975</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y3S (2GB+32GB)</td>	<td>9490</td>	<td>8787</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y50 (8GB+128GB)</td>	<td>16490</td>	<td>15379</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y51 (8GB+128GB)</td>	<td>17990</td>	<td>16791</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y51A (6GB+128GB)</td>	<td>16990</td>	<td>15849</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y51A (8GB+128GB)</td>	<td>17990</td>	<td>16791</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y53 (2GB+16GB)</td>	<td>9490</td>	<td>8787</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y53S (8GB+128GB)</td>	<td>18490</td>	<td>17262</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y56 5G (4GB+128GB)</td>	<td>15999</td>	<td>14916</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y56 5G (8GB+128GB)</td>	<td>17999</td>	<td>16800</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y58 5G (8GB+128GB)</td>	<td>17499</td>	<td>16079</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y72 (8GB+128GB)</td>	<td>19990</td>	<td>18675</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y73 (8GB+128GB)</td>	<td>19990</td>	<td>18675</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y75 4G (8GB+128GB)</td>	<td>19999</td>	<td>18683</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y75 5G (8GB+128GB)</td>	<td>21990</td>	<td>20558</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y90 (2GB+16GB)</td>	<td>7490</td>	<td>6904</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y91 (3GB+32GB)</td>	<td>9490</td>	<td>8787</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y91I (2GB+16GB)</td>	<td>8990</td>	<td>8426</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y91I (2GB+32GB)</td>	<td>7990</td>	<td>7472</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y91I (3GB+32GB)</td>	<td>8490</td>	<td>7949</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y93 (4GB+32GB)</td>	<td>12990</td>	<td>12083</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Y95 (4GB+ 64GB)</td>	<td>14990</td>	<td>13966</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 3 5G (8GB+128GB)</td>	<td>49999</td>	<td>46821.1</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 3 5G (8GB+256GB)</td>	<td>88999</td>	<td>82558.39</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 4 (8GB+128GB)</td>	<td>89999</td>	<td>83494.83</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 4 (8GB+256GB)</td>	<td>94999</td>	<td>88177.03</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 5 (8GB+256GB)</td>	<td>99999</td>	<td>92859.23</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 5 (8GB+512GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 6 (12GB+256GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 6 (12GB+512GB)</td>	<td>121999</td>	<td>113460.93</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 6 (8GB+256GB)</td>	<td>109999</td>	<td>102223.64</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FLIP 6 (8GB+512GB)</td>	<td>121999</td>	<td>113460.93</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 3 5G (12GB+256GB)</td>	<td>110999</td>	<td>103160.08</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 3 5G (12GB+512GB)</td>	<td>118999</td>	<td>110651.61</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 4 (12GB+1TB)</td>	<td>184999</td>	<td>172456.69</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 4 (12GB+256GB)</td>	<td>154999</td>	<td>144363.47</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 4 (12GB+512GB)</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 5 (12GB+1TB)</td>	<td>184999</td>	<td>172456.69</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 5 (12GB+256GB)</td>	<td>154999</td>	<td>144363.47</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 5 (12GB+512GB)</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+1TB)</td>	<td>200999</td>	<td>187439.74</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+256GB)</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+256GB) BLACK</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+256GB) NAVY</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+256GB) PINK</td>	<td>164999</td>	<td>153727.88</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+512GB)</td>	<td>176999</td>	<td>164965.17</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+512GB) NAVY</td>	<td>176999</td>	<td>164965.17</td>	</tr>
+<tr>	<td>Samsung</td>	<td>Z FOLD 6 (12GB+512GB) PINK</td>	<td>176999</td>	<td>164965.17</td>	</tr>
+<tr>	<td>VIVO</td>	<td>Z1X (8GB+128GB)</td>	<td>23990</td>	<td>22441</td>	</tr>
+
+  </tbody>
+</table>
+ <button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
+
+  <script>
+    // Filter function for each column
+    function filterTable(colIndex) {
+      const table = document.getElementById("myTable");
+      const input = table.querySelectorAll("thead input")[colIndex];
+      const filter = input.value.toLowerCase();
+      const rows = table.querySelectorAll("tbody tr");
+
+      rows.forEach(row => {
+        const cell = row.cells[colIndex];
+        const cellText = cell.textContent.toLowerCase();
+
+        // Remove previous highlights
+        row.querySelectorAll('.highlight').forEach(e => e.classList.remove('highlight'));
+
+        // Check if text matches the filter and apply highlights
+        if (cellText.includes(filter)) {
+          row.style.display = "";
+          highlightText(cell, filter);
+        } else {
+          row.style.display = "none";
+        }
+      });
+    }
+
+    // Highlight matched text in a cell
+    function highlightText(cell, filter) {
+      const cellText = cell.textContent;
+      const index = cellText.toLowerCase().indexOf(filter);
+
+      if (index !== -1) {
+        const highlighted = `<span class="highlight">${cellText.substring(index, index + filter.length)}</span>`;
+        const beforeText = cellText.substring(0, index);
+        const afterText = cellText.substring(index + filter.length);
+        cell.innerHTML = beforeText + highlighted + afterText;
+      }
+    }
+
+    // Reset all filters
+    function resetFilters() {
+      const table = document.getElementById("myTable");
+      const inputs = table.querySelectorAll("thead input");
+      inputs.forEach(input => input.value = '');
+      const rows = table.querySelectorAll("tbody tr");
+      rows.forEach(row => row.style.display = "");
+    }
+  </script>
+
+</body>
+</html>
+
 
 # Google Services (e.g. APIs or Firebase)
 google-services.json
